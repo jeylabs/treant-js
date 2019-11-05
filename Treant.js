@@ -438,7 +438,7 @@
 				i, len, node;
 
 			this.handleOverflow(treeWidth, treeHeight);
-
+			var Raphael = require("./vendor/raphael")
 			// position all the nodes
 			for(i =0, len = this.nodeDB.db.length; i < len; i++) {
 
