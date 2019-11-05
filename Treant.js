@@ -481,6 +481,7 @@
 
 		// create Raphael instance, set scrollbars if necessary
 		handleOverflow: function(treeWidth, treeHeight) {
+			var Raphael = require("./vendor/raphael")
 
 			var viewWidth = (treeWidth < this.drawArea.clientWidth) ? this.drawArea.clientWidth : treeWidth + this.CONFIG.padding*2,
 				viewHeight = (treeHeight < this.drawArea.clientHeight) ? this.drawArea.clientHeight : treeHeight + this.CONFIG.padding*2;
