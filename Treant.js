@@ -1343,6 +1343,9 @@
 	*/
 	var Treant = function(jsonConfig, callback) {
 
+		require('./vendor/jquery.min.js');
+		require('./vendor/jquery.easing.js');
+		require('./vendor/jquery.mousewheel.js');
 		if (jsonConfig instanceof Array) {
 			jsonConfig = JSONconfig.make(jsonConfig);
 		}
